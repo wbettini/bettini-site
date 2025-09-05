@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #0b3d91;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --accent-color: #ff9800;
+  --font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  color: var(--text-color);
+  background: white;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .tagline {
+  font-style: italic;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+}
+
+.skills {
+  columns: 2;
+  list-style: none;
+  padding: 0;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin: 0;
+}
+
+.job .date {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
