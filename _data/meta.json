@@ -1,0 +1,64 @@
+{
+  "title": "Bill Bettini | Data & AI Strategist",
+  "description": "Professional portfolio and resume of Bill Bettini — Data Architect, Product Manager, and MSDAAI candidate specializing in enterprise-scale AI, analytics, and automation.",
+  "url": "https://www.bettini.us",
+  "language": "en-US",
+  "author": "Bill Bettini",
+  "location": "Naples, Florida, United States",
+  "email": "wbettini@yahoo.com",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/bill-bettini",
+    "github": "https://github.com/wbettini",
+    "twitter": "https://twitter.com/wbettini"
+  },
+  "projects": [
+    {
+      "name": "PermitFlow",
+      "url": "https://github.com/wbettini/permitflow-ai",
+      "description": "An open-source project focused on workflow automation and permit tracking. It serves as a foundation for exploring agentic task orchestration and intelligent decision-making — including prototypes built with LangChain and FlowBot site navigator."
+    },
+    {
+      "name": "Professional Portfolio Site",
+      "url": "https://github.com/wbettini/bettini-site",
+      "description": "Hosted at www.bettini.us, this auto-updating resume and branding hub integrates GitHub and LinkedIn data. It showcases Bill’s technical work, thought leadership, and career evolution, with CI/CD workflows, and modern cloud architecture."
+    }
+  ],
+  "seo": {
+    "keywords": [
+      "Bill Bettini",
+      "Data Architect",
+      "AI Strategist",
+      "Enterprise Architecture",
+      "Power BI",
+      "LangChain",
+      "Workflow Automation",
+      "Agentic AI",
+      "Resume",
+      "Computer Science",
+      "Masters in Internet Business",
+      "Machine Learning",
+      "Business Intelligence",
+      "Workforce Strategy",
+      "Data Analytics",
+      "MSDAAI"
+    ],
+    "image": "/assets/profile-banner.png"
+  },
+  "style": {
+    "primary_color": "#0D1117",
+    "accent_color": "#58A6FF",
+    "text_color": "#E6EDF3",
+    "background_color": "#0D1117",
+    "card_background": "#161B22",
+    "font_family": "Inter, sans-serif",
+    "layout": "single-column",
+    "dark_mode": true
+  },
+  "light_style": {
+    "primary_color": "#F5F5F5",
+    "accent_color": "#1A73E8",
+    "text_color": "#222222",
+    "background_color": "#FFFFFF",
+    "card_background": "#F0F0F0"
+  }
+}

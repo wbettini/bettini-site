@@ -1,0 +1,61 @@
+# --- Site metadata ---
+title: "Bill Bettini | Data & AI Strategist"
+description: "Professional portfolio and resume of Bill Bettini — Data Architect, Product Manager, and MSDAAI candidate specializing in enterprise-scale AI, analytics, and automation."
+baseurl: "" # leave empty for root
+url: "https://www.bettini.us"
+language: "en-US"
+author: "Bill Bettini"
+
+# --- Custom style variables ---
+style:
+  primary_color: "#0D1117"      # Deep charcoal background
+  accent_color: "#58A6FF"       # Professional blue accent
+  font_family: "Inter, sans-serif"
+  layout: "single-column"
+  dark_mode: true
+  text_color: "#E6EDF3"         # Light gray text for readability
+  background_color: "#0D1117"   # Matches primary for full dark mode
+  card_background: "#161B22"    # Slightly lighter panels for contrast
+
+# --- Navigation ---
+navigation:
+  - name: "About"
+    url: "/about/"
+  - name: "Experience"
+    url: "/experience/"
+  - name: "Education"
+    url: "/education/"
+  - name: "Skills"
+    url: "/skills/"
+  - name: "Learning"
+    url: "/learning/"
+  - name: "Projects"
+    url: "/projects/"
+
+# --- Social links ---
+social:
+  linkedin: "https://www.linkedin.com/in/billbettini"
+  github: "https://github.com/bettini"
+  twitter: "https://twitter.com/bettini_ai"
+
+# --- SEO metadata ---
+seo:
+  keywords:
+    - "Bill Bettini"
+    - "Data Architect"
+    - "AI Strategist"
+    - "Enterprise Architecture"
+    - "Power BI"
+    - "LangChain"
+    - "Workflow Automation"
+    - "Agentic AI"
+    - "Resume"
+    - "Portfolio"
+    - "MSDAAI"
+  image: "/assets/profile-banner.png"
+
+# --- Build settings ---
+markdown: kramdown
+permalink: pretty
+include:
+  - _pages

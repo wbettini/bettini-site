@@ -1,3 +1,8 @@
+---
+layout: default
+title: Skills
+permalink: /skills/
+---
 # Skills & Competencies
 
 ## 🧠 AI & Machine Learning

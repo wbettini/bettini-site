@@ -1,3 +1,8 @@
+---
+layout: default
+title: Experience
+permalink: /experience/
+---
 # Experience
 
 ## BNY Mellon  

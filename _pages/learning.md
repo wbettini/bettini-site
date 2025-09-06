@@ -1,3 +1,8 @@
+---
+layout: default
+title: Learning
+permalink: /learning/
+---
 # Learning & Certifications
 
 Bill maintains a rigorous and ongoing learning schedule, blending formal coursework with self-directed exploration across AI, data strategy, and enterprise technology.

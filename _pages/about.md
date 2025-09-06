@@ -1,3 +1,8 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
 # About Me
 
 **Bill Bettini**  
@@ -23,5 +28,7 @@ I’m currently advancing my expertise through an online Master of Science in Da
 
 I’m passionate about mentoring the next generation of data scientists and applied AI professionals, translating complex technology into actionable insights, and ensuring that innovation always serves the business — not the other way around.
 
-📍 Naples, Florida, United States  
-🌐 [bettini.us](http://www.bettini.us)
+<!-- 📍 {{ site.data.meta.location }}  
+🌐 [{{ site.data.meta.url }}]({{ site.data.meta.url }})  
+✉️ [{{ site.data.meta.email }}](mailto:{{ site.data.meta.email }}) -->
+

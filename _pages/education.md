@@ -1,3 +1,8 @@
+---
+layout: default
+title: Education
+permalink: /education/
+---
 # Education
 
 ## Florida Gulf Coast University  
@@ -12,5 +17,5 @@ Graduate studies in internet architecture, eCommerce platforms, and business sys
 
 ## Mercy University  
 **Bachelor of Science (BS)**  
-*1987 – 2004*  
+*1987 – 1992*  
 Undergraduate foundation in computer science, systems design, and applied technology.

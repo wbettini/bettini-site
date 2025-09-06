@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ site.data.meta.language }}" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }} | {{ site.data.meta.title }}</title>
+  <meta name="description" content="{{ site.data.meta.description }}">
+  <meta name="keywords" content="{{ site.data.meta.seo.keywords | join: ', ' }}">
+  <link rel="canonical" href="{{ site.data.meta.url }}{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }} | {{ site.data.meta.title }}">
+  <meta property="og:description" content="{{ site.data.meta.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.data.meta.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.data.meta.seo.image }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }} | {{ site.data.meta.title }}">
+  <meta name="twitter:description" content="{{ site.data.meta.description }}">
+  <meta name="twitter:image" content="{{ site.data.meta.seo.image }}">
+  <meta name="twitter:site" content="@{{ site.data.meta.social.twitter | split: '/' | last }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <h1 class="site-title">{{ site.data.meta.title }}</h1>
+      <nav class="site-nav">
+        {% for item in site.navigation %}
+          <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.data.meta.author }}</p>
+      <p>
+        📍 {{ site.data.meta.location }} |
+        🌐 <a href="{{ site.data.meta.url }}">{{ site.data.meta.url }}</a> |
+        ✉️ <a href="mailto:{{ site.data.meta.email }}">{{ site.data.meta.email }}</a>
+      </p>
+      <p>
+        <a href="{{ site.data.meta.social.linkedin }}">LinkedIn</a> |
+        <a href="{{ site.data.meta.social.github }}">GitHub</a> |
+        <a href="{{ site.data.meta.social.twitter }}">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    root.setAttribute('data-theme', savedTheme);
+    toggleBtn.textContent = savedTheme === 'light' ? '🌞' : '🌙';
+
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = root.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      toggleBtn.textContent = newTheme === 'light' ? '🌞' : '🌙';
+    });
+  </script>
+</body>
+</html>
