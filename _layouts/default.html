@@ -23,6 +23,17 @@
   <meta name="twitter:image" content="{{ site.data.meta.seo.image }}">
   <meta name="twitter:site" content="@{{ site.data.meta.social.twitter | split: '/' | last }}">
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/icons/site.webmanifest' | relative_url }}">
+  <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
+  <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
   {% assign cache_bust = site.time | date: '%Y%m%d%H%M%S' %}
   <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: cache_bust | relative_url }}">
 
