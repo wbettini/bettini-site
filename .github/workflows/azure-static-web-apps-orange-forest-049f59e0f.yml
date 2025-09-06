@@ -11,28 +11,23 @@ on:
 
 jobs:
   build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
 
-      # Install system dependencies for native gems
       - name: Install system deps
         run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev zlib1g-dev libffi-dev libxml2-dev libxslt1-dev
 
-      # Setup Ruby for Jekyll
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.4'   # stable Actions-supported version
+          ruby-version: '3.2.4'
           bundler: '2.7.1'
           bundler-cache: true
 
-      # Build Jekyll site into ./_site
       - name: Build with Jekyll
         run: |
           bundle install
@@ -40,18 +35,16 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      # Deploy built site from _site
       - name: Deploy to Azure Static Web Apps
-        id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_FOREST_049F59E0F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "."        # repo root
-          output_location: "_site" # built site
-          skip_app_build: true     # we've already built it
-
+          output_location: "_site" # must match --destination above
+          skip_app_build: true
+          
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
