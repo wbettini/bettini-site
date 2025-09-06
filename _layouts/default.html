@@ -23,7 +23,8 @@
   <meta name="twitter:image" content="{{ site.data.meta.seo.image }}">
   <meta name="twitter:site" content="@{{ site.data.meta.social.twitter | split: '/' | last }}">
 
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.time | date: '%Y%m%d%H%M%S' | relative_url }}">
+
 </head>
 <body>
   <header>
