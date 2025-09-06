@@ -30,7 +30,9 @@
 <body>
   <header>
     <div class="container header-flex">
-      <h1 class="site-title">{{ site.data.meta.title }}</h1>
+      <a href="{{ site.data.meta.url }}">
+        <h1 class="site-title">{{ site.data.meta.title }}</h1>
+      </a>
       <nav class="site-nav">
         {% for item in site.navigation %}
           <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
