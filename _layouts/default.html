@@ -64,7 +64,9 @@
       <p>&copy; {{ site.time | date: "%Y" }} {{ site.data.meta.author }}</p>
       <p>
         📍 {{ site.data.meta.location }} |
-        🌐 <a href="{{ site.data.meta.url }}">{{ site.data.meta.url }}</a> |
+        <!-- 🌐 -->
+        <img src="{{ '/assets/icons/favicon.ico' | relative_url }}" alt="Website" style="height:1em; vertical-align:middle;">
+        <a href="{{ site.data.meta.url }}">{{ site.data.meta.url }}</a> | 
         ✉️ <a href="mailto:{{ site.data.meta.email }}">{{ site.data.meta.email }}</a>
       </p>
       <p>
