@@ -56,6 +56,10 @@ seo:
 
 # --- Build settings ---
 markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink: pretty
 include:
   - _pages
