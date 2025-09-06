@@ -37,7 +37,7 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      # 🔍 Debug step to verify build output before deploy
+      # Optional debug step — safe to remove later
       - name: List build output
         run: |
           echo "=== Current working directory ==="
@@ -55,8 +55,8 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_FOREST_049F59E0F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "bettini-site"
-          output_location: "_site"
+          app_location: ""         # ✅ repo root — ensures _site is inside this path
+          output_location: "_site" # built site
           skip_app_build: true
 
   close_pull_request_job:
