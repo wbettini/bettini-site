@@ -3,12 +3,11 @@ layout: default
 title: Home
 permalink: /
 ---
-
 # Bill Bettini
 
-**Data & AI Strategist | Enterprise Architecture & Analytics Leader**
+**Data & AI Strategist | Enterprise Architecture & Analytics Leader**  
+*Welcome to my professional portfolio and resume site.*
 
-Welcome to my professional portfolio and resume site.  
 Here you’ll find:
 
 - **About** – My professional background and guiding principles
