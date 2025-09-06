@@ -39,4 +39,4 @@ Here you’ll find:
 
 ---
 
-© {{ site.time | date: "%Y" }} Bill Bettini
+<!-- © {{ site.time | date: "%Y" }} Bill Bettini -->
