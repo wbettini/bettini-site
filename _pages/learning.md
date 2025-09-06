@@ -29,4 +29,6 @@ Bill maintains a rigorous and ongoing learning schedule, blending formal coursew
 - Currently enrolled in the MS in Data Analytics and AI program at Florida Gulf Coast University (2025–Present)
 
 ## 🧠 Learning Philosophy
-> “I treat learning as a continuous feedback loop — not just to stay current, but to shape the future of enterprise data strategy. Whether it’s a 10-minute micro-course or a semester-long graduate module, I extract what’s actionable and apply it to real-world systems.”
+> “I’ve always been drawn to the idea of continuous skill building. Years ago, I read that sharks must keep moving forward through the water to survive—they lack the ability to pass water over their gills while stationary. That image stuck with me, and over time, it’s become a personal philosophy: in learning, as in life, stagnation isn’t an option.
+
+This mindset is especially relevant in Information Technology, where today’s cutting-edge tools quickly become tomorrow’s legacy systems. To thrive in this space, a technologist must adopt the shark’s instinct—always moving, always learning, always evolving. Whether it’s a 10-minute micro-course or a semester-long graduate module, I extract what’s actionable and apply it to whatever is needed to keep moving forward.”
