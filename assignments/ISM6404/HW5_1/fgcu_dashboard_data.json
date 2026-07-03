@@ -1,7 +1,7 @@
 {
   "network": {
     "nodes": [
-      {"id": "MS_DAAI", "name": "MS Data Analytics & AI", "group": 1, "size": 12},
+      {"id": "MS_DAAI", "name": "MS Data Analytics & AI", "group": 1, "size": 20},
       {"id": "QMB6303", "name": "Data Driven Decision-Making", "group": 1, "size": 8},
       {"id": "ISM6136", "name": "Predictive Analytics and ML", "group": 1, "size": 6},
       {"id": "ISM6217", "name": "Data Management", "group": 1, "size": 6},
@@ -9,7 +9,7 @@
       {"id": "CAP5315", "name": "Applied Machine Learning", "group": 1, "size": 4},
       {"id": "CAP5768", "name": "Intro to Deep Learning", "group": 1, "size": 4},
       {"id": "QMB6304", "name": "Advanced Analytical Methods", "group": 1, "size": 4},
-      {"id": "MBA", "name": "Master of Business Administration", "group": 2, "size": 12},
+      {"id": "MBA", "name": "Master of Business Administration", "group": 2, "size": 20},
       {"id": "ACG6026", "name": "Accounting Concepts", "group": 2, "size": 8},
       {"id": "FIN6406", "name": "Financial Management", "group": 2, "size": 8},
       {"id": "MAR6815", "name": "Marketing Management", "group": 2, "size": 6},
@@ -17,7 +17,7 @@
       {"id": "ECO6416", "name": "Managerial Economics", "group": 2, "size": 6},
       {"id": "GEB6215", "name": "Business Strategy", "group": 2, "size": 4},
       {"id": "MAN6939", "name": "Global Business", "group": 2, "size": 4},
-      {"id": "MS_ACCT", "name": "MS Accounting & Taxation", "group": 3, "size": 12},
+      {"id": "MS_ACCT", "name": "MS Accounting & Taxation", "group": 3, "size": 20},
       {"id": "ACG5205", "name": "Advanced Financial Accounting", "group": 3, "size": 8},
       {"id": "TAX5015", "name": "Federal Income Taxation", "group": 3, "size": 8},
       {"id": "ACG6632", "name": "Advanced Auditing", "group": 3, "size": 6},
@@ -41,7 +41,6 @@
       {"source": "CAP5315", "target": "CAP5768", "weight": 1},
       {"source": "QMB6303", "target": "QMB6304", "weight": 1},
       {"source": "MBA", "target": "ACG6026", "weight": 3},
-      {"source": "MBA", "target": "FIN6406", "weight": 3},
       {"source": "ACG6026", "target": "FIN6406", "weight": 1},
       {"source": "MBA", "target": "MAR6815", "weight": 2},
       {"source": "MBA", "target": "MAN6246", "weight": 2},
