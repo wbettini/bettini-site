@@ -1,0 +1,58 @@
+{
+  "network": {
+    "nodes": [
+      { "id": "MS_DAAI", "name": "MS Data Analytics & AI", "group": 1, "size": 12 },
+      { "id": "QMB6303", "name": "Data Driven Decision-Making", "group": 1, "size": 8 },
+      { "id": "ISM6136", "name": "Predictive Analytics and ML", "group": 1, "size": 6 },
+      { "id": "ISM6217", "name": "Data Management", "group": 1, "size": 6 },
+      { "id": "ISM6422", "name": "AI/ML Tools for Business", "group": 1, "size": 6 },
+      { "id": "MBA", "name": "Master of Business Administration", "group": 2, "size": 12 },
+      { "id": "ACG6026", "name": "Accounting Concepts", "group": 2, "size": 8 },
+      { "id": "FIN6406", "name": "Financial Management", "group": 2, "size": 6 },
+      { "id": "MAR6815", "name": "Marketing Management", "group": 2, "size": 6 },
+      { "id": "MAN6246", "name": "Organizational Behavior", "group": 2, "size": 6 },
+      { "id": "MS_ACCT", "name": "MS Accounting & Taxation", "group": 3, "size": 12 },
+      { "id": "ACG5205", "name": "Advanced Financial Accounting", "group": 3, "size": 8 },
+      { "id": "TAX5015", "name": "Federal Income Taxation", "group": 3, "size": 6 },
+      { "id": "ACG6632", "name": "Advanced Auditing", "group": 3, "size": 6 },
+      { "id": "BUL5810", "name": "Legal Environment of Business", "group": 3, "size": 6 }
+    ],
+    "links": [
+      { "source": "MS_DAAI", "target": "QMB6303", "weight": 3 },
+      { "source": "QMB6303", "target": "ISM6136", "weight": 1 },
+      { "source": "QMB6303", "target": "ISM6217", "weight": 1 },
+      { "source": "QMB6303", "target": "ISM6422", "weight": 1 },
+      { "source": "MBA", "target": "ACG6026", "weight": 3 },
+      { "source": "ACG6026", "target": "FIN6406", "weight": 1 },
+      { "source": "ACG6026", "target": "MAR6815", "weight": 1 },
+      { "source": "ACG6026", "target": "MAN6246", "weight": 1 },
+      { "source": "MS_ACCT", "target": "ACG5205", "weight": 3 },
+      { "source": "ACG5205", "target": "TAX5015", "weight": 1 },
+      { "source": "ACG5205", "target": "ACG6632", "weight": 1 },
+      { "source": "ACG5205", "target": "BUL5810", "weight": 1 }
+    ]
+  },
+  "heatmap": [
+    {"garage": "Garage 1", "day": "Mon", "time": "08:00", "occupancy_pct": 62},
+    {"garage": "Garage 1", "day": "Mon", "time": "12:00", "occupancy_pct": 98},
+    {"garage": "Garage 1", "day": "Mon", "time": "16:00", "occupancy_pct": 42},
+    {"garage": "Garage 1", "day": "Wed", "time": "12:00", "occupancy_pct": 100},
+    {"garage": "Garage 1", "day": "Fri", "time": "12:00", "occupancy_pct": 65},
+    {"garage": "Garage 2", "day": "Mon", "time": "08:00", "occupancy_pct": 45},
+    {"garage": "Garage 2", "day": "Mon", "time": "12:00", "occupancy_pct": 85},
+    {"garage": "Garage 2", "day": "Wed", "time": "12:00", "occupancy_pct": 92},
+    {"garage": "Garage 2", "day": "Fri", "time": "12:00", "occupancy_pct": 40},
+    {"garage": "Garage B", "day": "Mon", "time": "08:00", "occupancy_pct": 25},
+    {"garage": "Garage B", "day": "Wed", "time": "12:00", "occupancy_pct": 75},
+    {"garage": "Garage B", "day": "Fri", "time": "12:00", "occupancy_pct": 20}
+  ],
+  "choropleth": [
+    {"county": "Lee", "fips": "12071", "students": 6420},
+    {"county": "Collier", "fips": "12021", "students": 2840},
+    {"county": "Charlotte", "fips": "12015", "students": 1150},
+    {"county": "Broward", "fips": "12011", "students": 950},
+    {"county": "Miami-Dade", "fips": "12086", "students": 820},
+    {"county": "Hillsborough", "fips": "12057", "students": 680},
+    {"county": "Palm Beach", "fips": "12099", "students": 610}
+  ]
+}

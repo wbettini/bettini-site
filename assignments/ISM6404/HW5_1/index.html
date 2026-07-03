@@ -1,0 +1,39 @@
+---
+layout: null
+render_with_liquid: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FGCU Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+</head>
+<body>
+    <header>
+        <h1>FGCU Data Visualization Dashboard</h1>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="pane pane-full">
+            <h2>Lutgert College of Business Prerequisite Network</h2>
+            <div id="network-graph"></div>
+        </div>
+
+        <div class="pane">
+            <h2>FGCU Parking Garage Heatmap</h2>
+            <div id="heatmap-graph"></div>
+        </div>
+
+        <div class="pane">
+            <h2>SWFL Alumni Density Choropleth Map</h2>
+            <div id="map-graph"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
