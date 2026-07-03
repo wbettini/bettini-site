@@ -26,6 +26,7 @@ Here you’ll find:
 - **Enterprise Architecture** – Designing robust data strategies that align with business goals.
 - **Continuous Learning** – Actively pursuing advanced degrees and certifications in AI and analytics.
 - **Data Visualization** – Building interactive D3.js topologies to map complex relational structures.
+
 ---
 
 ## Quick Links
@@ -37,6 +38,7 @@ Here you’ll find:
 - [Learning](/learning/)
 - [Projects](/projects/)
 - [ISM6404 Dashboard](/assignments/ISM6404/HW5_1/)
+
 ---
 
 <!-- © {{ site.time | date: "%Y" }} Bill Bettini -->

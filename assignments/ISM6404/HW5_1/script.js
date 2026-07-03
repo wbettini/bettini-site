@@ -65,14 +65,31 @@ function buildNetwork(data) {
         .attr("dy", d => d.size * 1.5 + 12)
         .text(d => d.id);
 
-    // Tick update
+// Tick update with boundary constraints
     simulation.on("tick", () => {
+        // 1. Add a small padding so the nodes don't get cut off halfway by the edge
+        const padding = 15;
+
+        // 2. Constrain the nodes BEFORE drawing them
+        node.attr("cx", d => {
+            const radius = d.size * 1.5; 
+            // Clamp X between the left edge and the right edge
+            d.x = Math.max(radius + padding, Math.min(width - radius - padding, d.x));
+            return d.x;
+        })
+        .attr("cy", d => {
+            const radius = d.size * 1.5;
+            // Clamp Y between the top edge and the bottom edge
+            d.y = Math.max(radius + padding, Math.min(height - radius - padding, d.y));
+            return d.y;
+        });
+
+        // 3. Update links and labels using the newly constrained x and y coordinates
         link.attr("x1", d => d.source.x)
             .attr("y1", d => d.source.y)
             .attr("x2", d => d.target.x)
             .attr("y2", d => d.target.y);
-        node.attr("cx", d => d.x)
-            .attr("cy", d => d.y);
+
         labels.attr("x", d => d.x)
               .attr("y", d => d.y);
     });
@@ -161,18 +178,22 @@ function buildChoropleth(studentData) {
 
         // Setup Color Scale mapping to student data
         const maxStudents = d3.max(studentData, d => d.students);
-        const colorScale = d3.scaleSequential(d3.interpolateGreens).domain([0, maxStudents]);
+        //const colorScale = d3.scaleSequential(d3.interpolateGreens).domain([0, maxStudents]);
+        const colorScale = d3.scaleSequential(d3.interpolateGreens)
+            .domain([0, Math.sqrt(maxStudents)]);
 
         // Map FIPS to Student count for easy lookup
         const dataMap = new Map(studentData.map(d => [d.fips, d]));
 
+
+        // Draw Florida Counties
         svg.append("g")
             .selectAll("path")
             .data(floridaCounties)
             .join("path")
             .attr("fill", d => {
                 const countyInfo = dataMap.get(d.id);
-                return countyInfo ? colorScale(countyInfo.students) : "#eee";
+                return countyInfo ? colorScale(Math.sqrt(countyInfo.students)) : "#eee";
             })
             .attr("d", path)
             .attr("stroke", "#ccc")
