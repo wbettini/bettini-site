@@ -18,6 +18,11 @@
       "description": "An open-source project focused on workflow automation and permit tracking. It serves as a foundation for exploring agentic task orchestration and intelligent decision-making — including prototypes built with LangChain and FlowBot site navigator."
     },
     {
+      "name": "Example OCIO Portal Site",
+      "url": "https://github.com/wbettini/OCIO_Portal",
+      "description": "Local prototype of an Office of the CIO (OCIO) portal: workforce, applications, platforms, assets, capabilities, resource planning, attestations, and analytics for a fictional org. Synthetic demo data only."
+    },
+    {
       "name": "Professional Portfolio Site",
       "url": "https://github.com/wbettini/bettini-site",
       "description": "Hosted at www.bettini.us, this auto-updating resume and branding hub integrates GitHub and LinkedIn data. It showcases Bill’s technical work, thought leadership, and career evolution, with CI/CD workflows, and modern cloud architecture."

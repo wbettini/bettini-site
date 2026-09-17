@@ -10,15 +10,16 @@ The site showcases Bill’s:
 - Ongoing academic and professional development
 - Open-source projects, including PermitFlow and agentic AI prototypes
 
-## 📁 Structure
+## Structure
 
-Content is modular and stored in the `src/` folder:
-- `about.md` — Professional summary and core strengths
-- `experience.md` — Career history and roles
-- `education.md` — Academic background
-- `skills.md` — Technical competencies grouped by domain
-- `learning.md` — Courses, certifications, and learning philosophy
-- `projects.md` — Featured open-source initiatives
+Content is organized across the Jekyll site structure:
+- `_pages/` — About, experience, education, skills, learning, and projects pages
+- `_data/meta.json` — Site metadata and featured project links
+- `_posts/` — Blog posts and announcements
+- `assignments/` — Interactive coursework and data visualization projects
+- `assets/` — Stylesheets, icons, and other static site assets
+
+Featured projects include PermitFlow, the [OCIO Portal prototype](https://github.com/wbettini/OCIO_Portal), and this portfolio site.
 
 ## 🚀 Deployment
 
