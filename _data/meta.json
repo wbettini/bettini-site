@@ -20,7 +20,7 @@
     {
       "name": "Example OCIO Portal Site",
       "url": "https://github.com/wbettini/OCIO_Portal",
-      "description": "Local prototype of an Office of the CIO (OCIO) portal: workforce, applications, platforms, assets, capabilities, resource planning, attestations, and analytics for a fictional org. Synthetic demo data only."
+      "description": "Hosted at https://ocio-portal-dev-wb2026.azurewebsites.net/, this local prototype of an Office of the CIO (OCIO) portal: workforce, applications, platforms, assets, capabilities, resource planning, attestations, and analytics for a fictional org. Synthetic demo data only."
     },
     {
       "name": "Professional Portfolio Site",
